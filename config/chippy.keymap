@@ -61,6 +61,11 @@
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <10 22>;
         };
+
+        copy {
+            bindings = <&kp K_COPY>;
+            key-positions = <15 27>;
+        };
     };
 
     macros {
@@ -91,34 +96,6 @@
             bindings = <&kp LC(Q)>;
             label = "CTRL_Q";
         };
-
-        ctrl_shift_z: ctrl_shift_z {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(LS(Z))>;
-            label = "CTRL_SHIFT_Z";
-        };
-
-        ctrl_shift_x: ctrl_shift_x {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LS(LC(X))>;
-            label = "CTRL_SHIFT_X";
-        };
-
-        ctrl_shift_c: ctrl_shift_c {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LS(LC(C))>;
-            label = "CTRL_SHIFT_C";
-        };
-
-        ctrl_shift_v: ctrl_shift_v {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LS(LC(V))>;
-            label = "CTRL_SHIFT_V";
-        };
     };
 
     keymap {
@@ -144,10 +121,10 @@
 
         raise_layer {
             bindings = <
-&kp TAB    &kp K_VOL_DN  &kp K_MUTE  &kp K_VOL_UP  &kp C_BRI_DN  &kp C_BRI_UP  &tog 3   &tog 4  &tog 5    &none    &none    &kp BSPC
-&kp LSHFT  &none         &none       &kp K_PREV    &kp K_PP      &kp K_NEXT    &kp F1   &kp F2  &kp F3    &kp F4   &kp F5   &kp F6
-&kp LCTRL  &kp K_UNDO    &kp K_CUT   &kp K_COPY    &kp K_PASTE   &none         &kp F7   &kp F8  &kp F9    &kp F10  &kp F11  &kp F12
-                                     &kp LGUI      &trans        &kp SPACE     &kp RET  &trans  &kp RGUI
+&kp TAB    &kp K_VOL_DN  &kp K_MUTE  &kp K_VOL_UP   &kp C_BRI_DN    &kp C_BRI_UP  &tog 3   &tog 4  &tog 5    &none    &none    &kp BSPC
+&kp LSHFT  &none         &none       &kp K_PREV     &kp K_PP        &kp K_NEXT    &kp F1   &kp F2  &kp F3    &kp F4   &kp F5   &kp F6
+&kp LCTRL  &kp K_UNDO    &kp K_CUT   &kp C_AC_COPY  &kp C_AC_PASTE  &none         &kp F7   &kp F8  &kp F9    &kp F10  &kp F11  &kp F12
+                                     &kp LGUI       &trans          &kp SPACE     &kp RET  &trans  &kp RGUI
             >;
         };
 
