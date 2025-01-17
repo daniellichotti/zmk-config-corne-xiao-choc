@@ -61,36 +61,6 @@
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <10 22>;
         };
-
-        undo {
-            bindings = <&ctrl_shift_z>;
-            key-positions = <13 25>;
-        };
-
-        cut {
-            bindings = <&ctrl_shift_x>;
-            key-positions = <14 26>;
-        };
-
-        copy {
-            bindings = <&ctrl_shift_c>;
-            key-positions = <15 27>;
-        };
-
-        paste {
-            bindings = <&ctrl_shift_v>;
-            key-positions = <28 16>;
-        };
-
-        copytest {
-            bindings = <&kp K_COPY>;
-            key-positions = <17 29>;
-        };
-
-        paSTE {
-            bindings = <&kp K_PASTE>;
-            key-positions = <18 30>;
-        };
     };
 
     macros {
