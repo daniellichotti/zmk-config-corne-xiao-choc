@@ -64,30 +64,14 @@
             key-positions = <10 22>;
         };
 
-        vscode_line_copy_up {
-            bindings = <&line_copy_up>;
-            key-positions = <20 32>;
+        left_brace {
+            bindings = <&kp LEFT_BRACE>;
+            key-positions = <28 16>;
         };
 
-        vscode_line_copy_down {
-            bindings = <&line_copy_down>;
-            key-positions = <19 31>;
-        };
-    };
-
-    macros {
-        line_copy_down: line_copy {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LA(LS(DOWN))>;
-            label = "LINE_COPY";
-        };
-
-        line_copy_up: line_copy_up {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LA(LS(UP_ARROW))>;
-            label = "LINE_COPY_UP";
+        right_brace {
+            bindings = <&kp RIGHT_BRACE>;
+            key-positions = <29 17>;
         };
     };
 
